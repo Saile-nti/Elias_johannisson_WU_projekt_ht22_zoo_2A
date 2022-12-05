@@ -1,13 +1,13 @@
 *{
-    background-color: bisque;
+    /* background-color: bisque; */
     margin: 5px;
 }
 
 img {
-    width: 0.3fr;
-    height: 25vh;
+    width: 0.5fr;
+    height: 660px;
     margin: 5px;
-    border-radius: 2px;
+    border-radius: 10px;
     border-color: azure;
 }
 
@@ -23,11 +23,12 @@ header{
 #heads{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 h1{
     font-size: 12rem;
+    backface-visibility: visible;
 }
 
 h2{
@@ -41,38 +42,53 @@ h3{
 .small_grid_1{
     display: grid;
     grid-column: 1fr 1fr;
-    grid-row: 25vh 30vh 30vh;
+    grid-row: 25vh 30vh 30vh minmax(100, 25vh);
     grid-template-areas:
     "he he" 
-    "b1 b2"
-    "b3 b4"
+    "b1 b1"
+    "b3 b3"
+    "fo fo"
     ;
 }
 
 .box_1{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around; 
     grid-area: b1;
-    background-color: aquamarine;
-}
-
-.box_2{
-    grid-area: b2;
-    display: flex;
-    justify-content: space-between;
-    background-color: blue;
 }
 
 .box_3{
     grid-area: b3;
     display: flex;
     justify-content: space-between;
-    background-color: blueviolet;
 }
 
-.box_4{
-    grid-area: b4;
-    display: flex;
-    justify-content: space-between;
-    background-color: brown;
+footer{
+    grid-area: fo;
+    background-color: black;
 }
+
+#card_layout{
+    background-color: burlywood;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly ;
+}
+
+article{
+    border: 3px solid black;
+    border-radius: 20px;
+    height: 40vh;
+    width: 850px;
+}
+
+#text{
+    opacity: 150%;
+}
+
+.Greta{
+    background: url(../img/persons/127_white_black_male.jpg);
+    background-size: cover;
+    opacity: 75%;
+}
+
