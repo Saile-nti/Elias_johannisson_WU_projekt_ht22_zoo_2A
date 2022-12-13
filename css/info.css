@@ -136,3 +136,10 @@ p{
 #make{
     grid-area: g1;
 }
+
+.float_pic{
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    width: 880px;
+    height: auto;
+}
