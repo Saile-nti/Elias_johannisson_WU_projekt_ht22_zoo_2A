@@ -1,10 +1,11 @@
 *{
-    /* background-color: bisque; */
     margin: 5px;
 }
 
+#color{
+    background-color: bisque;
+}
 img {
-    width: 0.5fr;
     height: 660px;
     margin: 5px;
     border-radius: 10px;
@@ -13,7 +14,6 @@ img {
 
 header{
     display: flex;
-    align-items: top;
     flex-direction: column;
     justify-content: center;
     background-color: #dfcdd8;
@@ -44,13 +44,13 @@ h4{
 }
 
 h5{
-    font-size: 7rem;
+    font-size: 6rem;
 }
 
 .small_grid_1{
     display: grid;
-    grid-column: 1fr 1fr;
-    grid-row: 25vh 30vh 30vh minmax(100, 25vh);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.9vh 31vh 31vh 1.5vh;
     grid-template-areas:
     "he he" 
     "b1 b1"
@@ -90,12 +90,14 @@ article{
     width: 850px;
 }
 .text{
-    backface-visibility: 80%;
-    color: rgb(72, 117, 156);
+    color: rgb(32, 65, 93);
+    background-color: rgba(220, 220, 220, 0.345);
 }
 
 .col{
-    color: rgb(22, 59, 94);
+    color: rgb(0, 0, 0);
+    background-color: rgba(200, 200, 200, 0.345);
+    
 }
 
 #Greta{
@@ -122,8 +124,8 @@ p{
 
 .Grid_oss{
     display: grid;
-    grid-column: 1fr 1fr;
-    grid-row: 65vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 65vh;
     grid-template-areas: 
     "g1 g2"
     ;
@@ -138,8 +140,8 @@ p{
 }
 
 .float_pic{
-    margin-bottom: 5px;
-    padding-bottom: 5px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
     width: 880px;
     height: auto;
 }
